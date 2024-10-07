@@ -1,231 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
 html {
+  font-size: 62.5%;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f7f7f7;
 }
 
+*::selection {
+  background: #2b3dda;
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+  background: rgb(235, 202, 245);
+}
+html::-webkit-scrollbar-thumb {
+  background: #420177;
+}
+
+/* ========== NAVBAR STARTS ================== */
 header {
-  background-color: #333;
-  padding: 1rem;
-  text-align: center;
-}
-
-header ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-header ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-header ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-.hero {
-  text-align: center;
-  padding: 5rem 0;
-  background-color: #f4f4f4;
-}
-
-/* ======================== ABOUT ============================= */
-.about {
-  padding: 2rem;
-  background-color: #fff;
-  text-align: center;
-  max-width: 800px;
-  margin: auto;
-}
-
-.about h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.about p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-}
-
-/* ============= SKILLS CSS=============== */
-.skills {
-  padding: 2rem;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-.skills h1 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.skill-category {
-  flex-basis: 45%; /* Adjust to 45% to fit two columns */
-  background-color: #fff;
-  padding: 1.5rem;
-  margin: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-.skill-category h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.skill-category ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.skill-category ul li {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-/* ================= PROJECTS SECTION  CSS ================= */
-.projects {
-  padding: 2rem;
-  background-color: #f1f1f1;
-  text-align: center;
-}
-
-.projects h1 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-.project-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.project-item {
-  flex-basis: 45%;
-  background-color: #fff;
-  padding: 1rem;
-  margin: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  text-align: left;
-}
-
-.project-item {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-item:hover {
-  transform: scale(1.05); /* Slight zoom */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Larger shadow */
-}
-
-a {
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #2c3e50; /* Change color on hover */
-}
-
-.project-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-}
-
-.project-item h2 {
-  font-size: 1.5rem;
-  margin-top: 1rem;
-}
-
-.project-item p {
-  font-size: 1.2rem;
-  margin: 0.5rem 0;
-}
-
-.project-item a {
-  text-decoration: none;
-  color: #3498db;
-  font-weight: bold;
-}
-
-.project-item a:hover {
-  text-decoration: underline;
-}
-
-/* ============== CONTACT SECTION CSS=================== */
-.contact {
-  padding: 2rem;
-  text-align: center;
-  background-color: #f9f9f9;
-}
-
-.contact h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.contact-links a {
-  display: block;
-  margin: 0.5rem 0;
-  font-size: 1.2rem;
-  color: #3498db;
-  text-decoration: none;
-}
-
-.contact-links a:hover {
-  text-decoration: underline;
-}
-
-/* ============ FOOTER CSS ================ */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #333;
-  color: white;
   position: fixed;
-  width: 100%;
-  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.7rem 10%;
+  height: 6.5rem;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
 }
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .skill-category {
-    flex-basis: 100%; /* Make skill boxes stack on smaller screens */
-  }
-
-  .project-item {
-    flex-basis: 100%;
-  }
-
-  header ul {
-    display: flex;
-    flex-direction: column; /* Stack nav links vertically */
-  }
-
-  .hero h1 {
-    font-size: 2rem; /* Adjust hero text size for mobile */
-  }
-
-  .skills,
-  .projects,
-  .contact {
-    padding: 1rem; /* Reduce padding on small screens */
-  }
+section {
+  min-height: 100vh;
+  padding: 2rem 9%;
 }
+.heading {
+  font-size: 3.5rem;
+  color: rgb(32, 32, 32);
+  font-weight: 800;
+  text-align: center;
+}
+.heading span {
+  color: rgb(115, 3, 167);
+}
+header .logo {
+  font-size: 1.9rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: #0e2431;
+}
+header .logo i {
+  font-size: 2.2rem;
+}
+header .logo:hover {
+  color: #fc8c05;
+}
+header .navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .navbar li {
+  margin-left: 2.5rem;
+}
+header .navbar ul li a {
+  font-size: 1.57rem;
+  color: #0e2431;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.04rem;
+  transition: 0.2s;
+}
+header .navbar ul li a.active,
+header .navbar ul li a:hover {
+  color: #011aff;
+  border-bottom: 0.2rem solid #011aff;
+  padding: 0.5rem 0;
+}
+/* ============ NAVBAR ENDS ========================== */

@@ -43,8 +43,7 @@ function showProjects(projects) {
   let projectsContainer = document.querySelector("#projects .box-container");
   let projectHTML = "";
   projects
-    .slice(0, 10)
-    .filter((project) => project.category != "android")
+    .slice(0, 5)
     .forEach((project) => {
       projectHTML += `
     <div class="box tilt">

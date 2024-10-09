@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Dagbani English Dictionary",
+    "desc": "An app that users can search for the meaning of Dagbani words in English and the meanings of English words in Dagbani.",
+    "image": "dagEnglish",
+    "category": "java",
+    "links": {
+      "view": "https://play.google.com/store/apps/details?id=com.dagbani.dagbanidictionary&hl=en"
+    }
+  },
+  {
+    "name": "Dagbani Quran",
+    "desc": "Get the Dagbani and English translation of the The Holy Quran from Arabic.",
+    "image": "dagQuran",
+    "category": "java",
+    "links": {
+      "view": "https://play.google.com/store/apps/details?id=com.dagbani.quran&hl=en"
+    }
+  },
+  {
+    "name": "Image Resizer",
+    "desc": "A desktop image resizer app created with HTML, CSS and vanilla Javascript and run with Electron",
+    "image":"",
+    "category": "JS",
+    "links": {
+        "view": "https://github.com/at-tawlib/image-resizer",
+        "code": "https://github.com/at-tawlib/image-resizer"
+    }
+  },
+  {
+    "name": "Advance Shopping Cart",
+    "desc": "An advanced shopping cart with React Typescript",
+    "image": "advanceShoppingCart",
+    "category": "Javascript",
+    "links": {
+        "view": "https://github.com/at-tawlib/advance-shopping-cart",
+        "code": "https://github.com/at-tawlib/advance-shopping-cart"
+    }
+  },
+  {
+    "name": "NotyStack Android",
+    "desc": "Fully fledged android CRUD app based on different design patterns. Built using Java, XML, SQLite, Firebase, RoomDB, MVVM.",
+    "image": "notystackandroid",
+    "category": "android",
+    "links": {
+      "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
+      "code": "https://github.com/jigar-sable/notystack-android"
+    }
+  },
+  {
+    "name": "SPPU Engg Prep",
+    "desc": "All in one SPPU Engineering resources. Built using Java, XML and Firebase.",
+    "image": "sppuprepandroid",
+    "category": "android",
+    "links": {
+      "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
+      "code": "https://github.com/jigar-sable/sppu-prep-android"
+    }
+  },
+  {
+    "name": "NewsBox Android",
+    "desc": "Native android app built using Java, XML. Retrofit & Glide dependencies. Provides different category news.",
+    "image": "newsboxandroid",
+    "category": "android",
+    "links": {
+      "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
+      "code": "https://github.com/jigar-sable/newsbox-android"
+    }
+  },
+  {
+    "name": "Weatherly Android",
+    "desc": "Native android app built using Java, XML and Volley dependencies. Provides weather forecast.",
+    "image": "weatherlyandroid",
+    "category": "android",
+    "links": {
+      "view": "https://www.linkedin.com/posts/jigar-sable_androiddev-androidstudio-java-activity-6955224473822199808-JT0j",
+      "code": "https://github.com/jigar-sable/weatherly-android"
+    }
+  }
+]

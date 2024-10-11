@@ -3,8 +3,8 @@
 
 /* Define color variables in the :root */
 :root {
-  --primary-color: #CC0000;
-  --primary-color-light: #FF0000;
+  --primary-color: #cc0000;
+  --primary-color-light: #ff0000;
   --primary-color-dark: #660000;
   --secondary-color: #38761d;
   --background-color: #f4f4f4;
@@ -68,7 +68,7 @@ header {
   z-index: 1000;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 1.7rem 10%;
   height: 6.5rem;
   background-color: var(--primary-color);
@@ -88,7 +88,7 @@ section {
 }
 
 .heading span {
-  color: rgb(115, 3, 167);  /* TODO: remove */
+  color: rgb(115, 3, 167); /* TODO: remove */
 }
 
 header .logo {
@@ -131,6 +131,60 @@ header .navbar ul li a:hover {
   color: #fc8c05;
   border-bottom: 0.2rem solid #fc8c05;
   padding: 0.5rem 0;
+}
+
+/* ========================= HAMBURGER ICON ========================== */
+#menu {
+  font-size: 3rem;
+  cursor: pointer;
+  color: rgb(24, 2, 63);
+  display: none;
+}
+@media (max-width: 768px) {
+  #menu {
+    display: block;
+  }
+  header .navbar {
+    position: fixed;
+    top: 6.5rem;
+    right: -120%;
+    width: 75%;
+    height: 100%;
+    text-align: left;
+    align-items: flex-start;
+    background-color: #0e0f31;
+  }
+  header .navbar ul {
+    flex-flow: column;
+    padding: 1rem;
+  }
+  header .navbar ul li {
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    width: 26rem;
+  }
+  header .navbar ul li a {
+    display: block;
+    padding: 1rem;
+    text-align: left;
+    color: #fff;
+    font-size: 2rem;
+  }
+  header .navbar ul li a.active,
+  header .navbar ul li a:hover {
+    padding: 1rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem solid #011aff;
+  }
+  .fa-times {
+    transform: rotate(180deg);
+  }
+  header .navbar.nav-toggle {
+    right: 0;
+  }
 }
 
 /* =================== HERO SECTION =========================  */
@@ -351,7 +405,7 @@ header .navbar ul li a:hover {
 }
 
 .about .row .content p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-top: 1.5rem;
   font-family: "Nunito";
   font-weight: 600;
@@ -399,7 +453,11 @@ header .navbar ul li a:hover {
 /* ================== SKILLS SECTION ====================== */
 .skills {
   min-height: 90vh;
-  background: linear-gradient(to bottom, var(--complementary-color), var(--secondary-color));
+  background: linear-gradient(
+    to bottom,
+    var(--complementary-color),
+    var(--secondary-color)
+  );
 }
 
 .skills h2 {
@@ -480,7 +538,11 @@ header .navbar ul li a:hover {
 
 /* ================= PROJECTS SECTION ==================== */
 .projects {
-  background: linear-gradient(to bottom, var(--primary-color), var(--primary-color-dark));
+  background: linear-gradient(
+    to bottom,
+    var(--primary-color),
+    var(--primary-color-dark)
+  );
 }
 
 .projects h2 {
@@ -798,7 +860,7 @@ form .button-area {
 .footer {
   min-height: auto;
   padding-top: 0;
-  background: var(--primary-color)
+  background: var(--primary-color);
 }
 
 .footer .box-container {
@@ -910,4 +972,22 @@ form .button-area {
   .footer .box-container .box .share a {
     padding: 1.2rem;
   }
+}
+
+/* ================  SCROLL-TOP ================ */
+#scroll-top {
+  position: fixed;
+  top: -140%;
+  right: 2rem;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  background: #ffae00;
+  color: rgb(13, 0, 44);
+  border-radius: 50%;
+  transition: 1s linear;
+  z-index: 1000;
+}
+
+#scroll-top.active {
+  top: calc(100% - 12rem);
 }

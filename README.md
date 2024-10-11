@@ -2,6 +2,8 @@
 
 This is the personal portfolio website for Abdul-Fatahu Hardi, showcasing his skills, projects, and contact information. The website provides an interactive and professional platform for visitors to learn more about Abdul-Fatahu's journey from Medical Laboratory Scientist to Software Engineer.
 
+![Project Screenshot](assets/homepage.png)
+
 ## Table of Contents
 
 -   [Live Demo](#live-demo)

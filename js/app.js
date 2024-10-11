@@ -1,24 +1,23 @@
-particlesJS("particles-js", 
-    {
+particlesJS("particles-js", {
   particles: {
     number: {
-      value: 20,
+      value: 80,
       density: {
         enable: true,
         value_area: 800,
       },
     },
     color: {
-      value: "#2f8749",
+      value: "#cc0000",
     },
     shape: {
-      type: "polygon",
+      type: "circle",
       stroke: {
         width: 0,
-        color: "#000",
+        color: "#000000",
       },
       polygon: {
-        nb_sides: 6,
+        nb_sides: 8,
       },
       image: {
         src: "img/github.svg",
@@ -27,8 +26,8 @@ particlesJS("particles-js",
       },
     },
     opacity: {
-      value: 0.3,
-      random: true,
+      value: 0.5,
+      random: false,
       anim: {
         enable: false,
         speed: 1,
@@ -37,29 +36,29 @@ particlesJS("particles-js",
       },
     },
     size: {
-      value: 40,
+      value: 4,
       random: true,
       anim: {
-        enable: true,
-        speed: 80,
-        size_min: 40,
+        enable: false,
+        speed: 40,
+        size_min: 0.1,
         sync: false,
       },
     },
     line_linked: {
       enable: true,
-      distance: 200,
-      color: "#ca9f15",
-      opacity: 1,
-      width: 3.3144200948555453,
+      distance: 150,
+      color: "#cc0000",
+      opacity: 0.4,
+      width: 1,
     },
     move: {
       enable: true,
       speed: 6,
-      direction: "bottom",
-      random: true,
+      direction: "none",
+      random: false,
       straight: false,
-      out_mode: "bounce",
+      out_mode: "out",
       bounce: false,
       attract: {
         enable: false,
@@ -72,11 +71,11 @@ particlesJS("particles-js",
     detect_on: "canvas",
     events: {
       onhover: {
-        enable: false,
-        mode: "grab",
+        enable: true,
+        mode: "repulse",
       },
       onclick: {
-        enable: false,
+        enable: true,
         mode: "push",
       },
       resize: true,
@@ -108,13 +107,4 @@ particlesJS("particles-js",
     },
   },
   retina_detect: true,
-  "config_demo": {
-    "hide_card": false,
-    "background_color": "#000000",
-    "background_image": "",
-    "background_position": "50% 50%",
-    "background_repeat": "no-repeat",
-    "background_size": "cover"
-  }}
-
-);
+});

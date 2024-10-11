@@ -1,6 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 
+/* Define color variables in the :root */
+:root {
+  --primary-color: #CC0000;
+  --primary-color-light: #FF0000;
+  --primary-color-dark: #660000;
+  --secondary-color: #38761d;
+  --background-color: #f4f4f4;
+  --text-color: #2c3e50; /* Dark Blue/Grey (same as secondary) */
+  --highlight-color: #e74c3c;
+  --neutral-color: #bdc3c7;
+  --complementary-color: #fc8c05;
+}
+
+/* Usage
+  background-color: var(--background-color);
+ */
+
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +37,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #f7f7f7;
+  background: var(--background-color);
 }
 
 *::selection {
@@ -54,55 +71,65 @@ header {
   justify-content: space-between;
   padding: 1.7rem 10%;
   height: 6.5rem;
-  background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+  background-color: var(--primary-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 section {
   min-height: 100vh;
   padding: 2rem 9%;
 }
+
 .heading {
   font-size: 3.5rem;
   color: rgb(32, 32, 32);
   font-weight: 800;
   text-align: center;
 }
+
 .heading span {
-  color: rgb(115, 3, 167);
+  color: rgb(115, 3, 167);  /* TODO: remove */
 }
+
 header .logo {
   font-size: 1.9rem;
   font-weight: 800;
   text-decoration: none;
-  color: #0e2431;
+  color: #fff;
 }
+
 header .logo i {
   font-size: 2.2rem;
 }
+
 header .logo:hover {
   color: #fc8c05;
 }
+
 header .navbar ul {
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 header .navbar li {
   margin-left: 2.5rem;
 }
+
 header .navbar ul li a {
   font-size: 1.57rem;
-  color: #0e2431;
+  color: #fff;
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 0.04rem;
   transition: 0.2s;
 }
+
 header .navbar ul li a.active,
 header .navbar ul li a:hover {
-  color: #011aff;
-  border-bottom: 0.2rem solid #011aff;
+  color: #fc8c05;
+  border-bottom: 0.2rem solid #fc8c05;
   padding: 0.5rem 0;
 }
 
@@ -115,6 +142,7 @@ header .navbar ul li a:hover {
   min-height: 100vh;
   align-items: center;
 }
+
 /* TODO: to implement the particles-js */
 .home #particles-js {
   position: absolute;
@@ -371,7 +399,7 @@ header .navbar ul li a:hover {
 /* ================== SKILLS SECTION ====================== */
 .skills {
   min-height: 90vh;
-  background: linear-gradient(to bottom, #57059e, #4a00e0);
+  background: linear-gradient(to bottom, var(--complementary-color), var(--secondary-color));
 }
 
 .skills h2 {
@@ -452,7 +480,7 @@ header .navbar ul li a:hover {
 
 /* ================= PROJECTS SECTION ==================== */
 .projects {
-  background: linear-gradient(to bottom, #000031, #00002c);
+  background: linear-gradient(to bottom, var(--primary-color), var(--primary-color-dark));
 }
 
 .projects h2 {
@@ -770,7 +798,7 @@ form .button-area {
 .footer {
   min-height: auto;
   padding-top: 0;
-  background: rgb(0, 1, 43);
+  background: var(--primary-color)
 }
 
 .footer .box-container {

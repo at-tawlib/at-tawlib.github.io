@@ -20,7 +20,7 @@
   {
     "name": "Image Resizer",
     "desc": "A desktop image resizer app created with HTML, CSS and vanilla Javascript and run with Electron",
-    "image":"",
+    "image":"imageResizer",
     "category": "JS",
     "links": {
         "view": "https://github.com/at-tawlib/image-resizer",

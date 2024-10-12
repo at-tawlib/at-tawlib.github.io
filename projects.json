@@ -20,11 +20,11 @@
   {
     "name": "Image Resizer",
     "desc": "A desktop image resizer app created with HTML, CSS and vanilla Javascript and run with Electron",
-    "image":"imageResizer",
+    "image": "imageResizer",
     "category": "JS",
     "links": {
-        "view": "https://github.com/at-tawlib/image-resizer",
-        "code": "https://github.com/at-tawlib/image-resizer"
+      "view": "https://github.com/at-tawlib/image-resizer",
+      "code": "https://github.com/at-tawlib/image-resizer"
     }
   },
   {
@@ -33,8 +33,18 @@
     "image": "advanceCart",
     "category": "Javascript",
     "links": {
-        "view": "https://github.com/at-tawlib/advance-shopping-cart",
-        "code": "https://github.com/at-tawlib/advance-shopping-cart"
+      "view": "https://github.com/at-tawlib/advance-shopping-cart",
+      "code": "https://github.com/at-tawlib/advance-shopping-cart"
+    }
+  },
+  {
+    "name": "Facebook Homepage Clone",
+    "desc": "A clone of the Facebook homepage with React",
+    "image": "facebookClone",
+    "category": "Javascript",
+    "links": {
+      "view": "https://github.com/at-tawlib/fb-mui",
+      "code": "https://github.com/at-tawlib/fb-mui"
     }
   }
 ]

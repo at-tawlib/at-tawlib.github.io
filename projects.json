@@ -28,6 +28,16 @@
     }
   },
   {
+    "name": "Sociopedia",
+    "desc": "SOCIOPEDIA is a full-stack social media application developed using the MERN stack, as taught by Ed Roh's YouTube tutorial.",
+    "image": "",
+    "category": "Javascript",
+    "links": {
+      "view": "https://github.com/at-tawlib/sociopedia",
+      "code": "https://github.com/at-tawlib/sociopedia"
+    }
+  },
+  {
     "name": "Advance Shopping Cart",
     "desc": "An advanced shopping cart with React Typescript",
     "image": "advanceCart",

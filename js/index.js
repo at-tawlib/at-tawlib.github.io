@@ -109,7 +109,7 @@ function showSkills(skills) {
 function showProjects(projects) {
   let projectsContainer = document.querySelector("#projects .box-container");
   let projectHTML = "";
-  projects.slice(0, 5).forEach((project) => {
+  projects.forEach((project) => {
     projectHTML += `
     <div class="box tilt">
       <img 
